@@ -1,0 +1,12 @@
+@import "src/constants/variables.scss";
+
+.main {
+  height: $header-height;
+  border: 2px solid red;
+
+  .logo {
+    width: 100px;
+    border: 2px solid lawngreen;
+    height: 40px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "src/constants/variables.scss";
+
+.main {
+  border: 2px solid salmon;
+  display: flex;
+  .sxColumn {
+    height: calc(100vh - $header-height);
+    width: 20%;
+    border: 2px solid mediumaquamarine;
+  }
+  .dxColumn {
+    height: calc(100vh - $header-height);
+    width: 80%;
+    border: 2px solid yellowgreen;
+  }
+}
