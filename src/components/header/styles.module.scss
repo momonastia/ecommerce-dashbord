@@ -2,11 +2,10 @@
 
 .main {
   height: $header-height;
-  border: 2px solid red;
-
+  background-color: #141414;
+  border-bottom: 1px solid black;
   .logo {
     width: 100px;
-    border: 2px solid lawngreen;
     height: 40px;
   }
 }

@@ -1,16 +1,21 @@
 @import "src/constants/variables.scss";
 
 .main {
-  border: 2px solid salmon;
   display: flex;
   .sxColumn {
     height: calc(100vh - $header-height);
     width: 20%;
-    border: 2px solid mediumaquamarine;
+    background-color: #141414;
+    border-right: 1px solid black;
   }
   .dxColumn {
     height: calc(100vh - $header-height);
     width: 80%;
-    border: 2px solid yellowgreen;
+    background-color: #1c1d21;
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
   }
 }

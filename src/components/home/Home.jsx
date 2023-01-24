@@ -1,12 +1,11 @@
-import Logo from "../logo";
 import styles from "./styles.module.scss";
 
-const Header = () => {
+const Home = () => {
   return (
     <div className={styles.main}>
-      <Logo />
+      <h1>Home comp here</h1>
     </div>
   );
 };
 
-export default Header;
+export default Home;
