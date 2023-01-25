@@ -5,7 +5,8 @@ import {
   ImCoinDollar,
   ImUser,
   ImPieChart,
-  ImKey,
+  ImCogs,
+  ImFolderOpen,
 } from "react-icons/im";
 
 export const NavBarLinks = [
@@ -19,6 +20,12 @@ export const NavBarLinks = [
     id: 2,
     label: "Products",
     route: "products",
+    icon: <ImFolderOpen />,
+  },
+  {
+    id: 8,
+    label: "Categories",
+    route: "categories",
     icon: <ImList />,
   },
   {
@@ -49,6 +56,6 @@ export const NavBarLinks = [
     id: 7,
     label: "Settings",
     route: "settings",
-    icon: <ImKey />,
+    icon: <ImCogs />,
   },
 ];
