@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { POST, PUT } from "../../libs/HTTP";
+import styles from "./styles.module.scss";
 
 const CategoryForm = ({ setShowModal, getData, data }) => {
   const [edit, setEdit] = useState(false);

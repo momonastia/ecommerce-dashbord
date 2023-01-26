@@ -4,4 +4,37 @@
   border-radius: 10px;
   margin: 3%;
   box-sizing: content-box;
+  overflow-y: scroll;
+
+  .productListItem {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1e1f1f;
+    gap: 10px;
+
+    .productListItemImage {
+      width: 20px;
+      height: 20px;
+    }
+    .productListItemImage img {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+    }
+    .buttons {
+      order: 999;
+      margin-left: auto;
+    }
+    button {
+      background-color: #0ebe75;
+      height: 25px;
+      width: 3em;
+      margin: 3px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  }
 }

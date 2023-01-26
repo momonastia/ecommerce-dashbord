@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { GET } from "../../libs/HTTP";
 import { ImSpinner6 } from "react-icons/im";
+import DeleteProductBtn from "../deleteProductBtn/DeleteProductBtn";
+import EditProductBtn from "../editProductBtn/EditProductBtn";
 import styles from "./styles.module.scss";
 import Table from "../table/Table";
 
@@ -31,7 +33,26 @@ const Products = () => {
       {productState.loading ? (
         <ImSpinner6 />
       ) : (
-        <Table productState={productState.product} />
+        <Fragment>
+          <div className={styles.tableHeader}>Products</div>
+          <div className={styles.tableBody}>
+            {productState.product.map((item, id) => (
+              /* console.log(item.title); */
+              <>
+                <div className={styles.productListItem} key={item.id}>
+                  <div className={styles.productListItemImage}>
+                    <img src={item.images[0]} alt="" />
+                  </div>
+                  <div>{item.title}</div>
+                  <div>Price: {item.price} $</div>
+                  <div className={styles.buttons}></div>
+                  <EditProductBtn getData={getData} />
+                  <DeleteProductBtn getData={getData} id={item.id} />
+                </div>
+              </>
+            ))}
+          </div>
+        </Fragment>
       )}
     </div>
   );
