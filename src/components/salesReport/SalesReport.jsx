@@ -11,10 +11,11 @@ import styles from "./styles.module.scss";
 
 const SalesReport = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.mainSalesReport}>
       <h3>Sales report</h3>
       <AreaChart
-        width={600}
+        className={styles.AreaChart}
+        width={300}
         height={200}
         data={data}
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}

@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 
 const SalesBarReport = ({ children }) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.mainSalesBarReport}>
       <h4>{children}</h4>
       <BarChart width={280} height={100} data={data03}>
         <CartesianGrid strokeDasharray="3 3" />
