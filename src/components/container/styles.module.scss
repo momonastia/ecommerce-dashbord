@@ -19,3 +19,11 @@
     width: 0;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .main {
+    .dxColumn {
+      overflow-y: hidden;
+    }
+  }
+}

@@ -99,38 +99,38 @@ const data02 = [
 const data03 = [
   {
     name: "Page A",
-    uv: 4000,
-    pv: 2400,
+    uv: 400,
+    pv: 240,
   },
   {
     name: "Page B",
-    uv: 3000,
-    pv: 1398,
+    uv: 300,
+    pv: 139,
   },
   {
     name: "Page C",
-    uv: 2000,
-    pv: 9800,
+    uv: 200,
+    pv: 980,
   },
   {
     name: "Page D",
-    uv: 2780,
-    pv: 3908,
+    uv: 278,
+    pv: 390,
   },
   {
     name: "Page E",
-    uv: 1890,
-    pv: 4800,
+    uv: 189,
+    pv: 480,
   },
   {
     name: "Page F",
-    uv: 2390,
-    pv: 3800,
+    uv: 239,
+    pv: 380,
   },
   {
     name: "Page G",
-    uv: 3490,
-    pv: 4300,
+    uv: 349,
+    pv: 430,
   },
 ];
 

@@ -14,7 +14,7 @@ const SalesBarReport = ({ children }) => {
   return (
     <div className={styles.mainSalesBarReport}>
       <h4>{children}</h4>
-      <BarChart width={280} height={100} data={data03}>
+      <BarChart width={280} height={120} data={data03}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
