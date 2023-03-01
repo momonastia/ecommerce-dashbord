@@ -7,23 +7,16 @@ const Table = ({ categoryState, getData }) => {
     <div className={styles.main}>
       <div className={styles.tableHeader}>Categories</div>
       <div className={styles.tableBody}>
-        {categoryState
-          /* .filter(
-            (item) =>
-              item.name === "Electronics" ||
-              item.name === "Clothes" ||
-              item.name === "Others"
-          ) */
-          .map((item) => (
-            <div className={styles.tableRow} key={item.id}>
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
-              <div className={styles.buttons}>
-                <EditBtn getData={getData} />
-                <DeleteBtn getData={getData} id={item.id} />
-              </div>
+        {categoryState.map((item) => (
+          <div className={styles.tableRow} key={item.id}>
+            <img src={item.image} alt={item.name} />
+            <p>{item.name}</p>
+            <div className={styles.buttons}>
+              <EditBtn getData={getData} />
+              <DeleteBtn getData={getData} id={item.id} />
             </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
   );

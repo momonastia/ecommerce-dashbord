@@ -6,7 +6,7 @@ const ChannelsReport = () => {
   return (
     <div className={styles.mainChannelsReport}>
       <h3>Channels</h3>
-      <PieChart width={300} height={220}>
+      <PieChart width={290} height={220}>
         <Pie
           data={data01}
           dataKey="value"
