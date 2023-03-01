@@ -1,4 +1,4 @@
-import styled from "styled-components";
+/* import styled from "styled-components"; */
 import SalesReport from "../salesReport/SalesReport";
 import SalesBarReport from "../salesBarReport/SalesBarReport";
 import ChannelsReport from "../channelsReport/ChannelsReport";
@@ -7,35 +7,36 @@ import styles from "./styles.module.scss";
 const Home = () => {
   // styled components
 
-  const SalesBarCharts = styled.div`
+  /* const SalesBarCharts = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
     padding: 30px;
-  `;
+  `; */
 
-  const Charts = styled.div`
+  /* const Charts = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
     width: 100%;
     margin: 30px;
-  `;
+  `; */
 
   return (
     <div className={styles.main}>
-      <SalesBarCharts>
+      <div className={styles.TotalCharts}>
         <SalesBarReport>{"Total balance"}</SalesBarReport>
         <SalesBarReport>{"Total sales"}</SalesBarReport>
         <SalesBarReport>{"Total expenses"}</SalesBarReport>
-      </SalesBarCharts>
-      <Charts>
+      </div>
+
+      <div className={styles.Charts}>
         <ChannelsReport />
         <SalesReport />
-      </Charts>
+      </div>
     </div>
   );
 };

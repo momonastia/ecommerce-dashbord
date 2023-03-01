@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const ChannelsReport = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.mainChannelsReport}>
       <h3>Channels</h3>
       <PieChart width={300} height={220}>
         <Pie

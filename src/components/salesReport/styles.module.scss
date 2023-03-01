@@ -1,6 +1,7 @@
 @import "src/constants/variables.scss";
 
-.main {
+.mainSalesReport {
+  width: 100%;
   max-width: 700px;
   display: flex;
   flex-direction: column;
@@ -8,4 +9,8 @@
   background-color: #141414;
   border-radius: 10px;
   padding: 10px;
+
+  .AreaChart {
+    width: 100%;
+  }
 }
