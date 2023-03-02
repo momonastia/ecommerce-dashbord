@@ -11,8 +11,9 @@
   padding: 10px;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .mainChannelsReport {
     width: 30%;
+    padding: 10px 0;
   }
 }
