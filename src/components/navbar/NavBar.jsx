@@ -5,7 +5,7 @@ import LiComponent from "../licomponent/LiComponent.jsx";
 const NavBar = ({ changeRoute }) => {
   return (
     <div>
-      <ul className={styles.main}>
+      <ul className={styles.mainNavBar}>
         {NavBarLinks.map((item) => (
           <LiComponent
             changeRoute={changeRoute}

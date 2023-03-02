@@ -1,0 +1,22 @@
+.Logo {
+  width: 150px;
+  height: 4rem;
+  padding: 5px;
+}
+
+.Logo img {
+  width: 100%;
+  height: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .Logo {
+    width: 200px;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .Logo img {
+    width: 100%;
+  }
+}

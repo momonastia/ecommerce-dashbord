@@ -5,6 +5,7 @@
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   overflow-y: scroll;
 
@@ -17,6 +18,7 @@
   }
 
   .Charts {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -29,6 +31,7 @@
     overflow-y: hidden;
 
     .TotalCharts {
+      width: 100%;
       flex-direction: row;
       overflow-y: hidden;
     }
