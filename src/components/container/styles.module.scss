@@ -4,13 +4,13 @@
   display: flex;
   .sxColumn {
     height: calc(100vh - $header-height);
-    width: 20%;
+    width: 15%;
     background-color: #141414;
     border-right: 1px solid black;
   }
   .dxColumn {
     height: calc(100vh - $header-height);
-    width: 80%;
+    width: 85%;
     background-color: #1c1d21;
     overflow: scroll;
   }
@@ -22,8 +22,12 @@
 
 @media only screen and (min-device-width: 1024px) {
   .main {
+    .sxColumn {
+      width: 20%;
+    }
     .dxColumn {
       overflow-y: hidden;
+      width: 80%;
     }
   }
 }

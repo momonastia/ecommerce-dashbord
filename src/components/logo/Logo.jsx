@@ -1,10 +1,10 @@
 import logo from "./logo.png";
-import "./index.css";
+import styles from "./styles.module.scss";
 
 const Logo = () => {
   const LogoPic = <img src={logo} alt="" />;
 
-  return <div className="Logo">{LogoPic}</div>;
+  return <div className={styles.Logo}>{LogoPic}</div>;
 };
 
 export default Logo;
