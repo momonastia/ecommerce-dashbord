@@ -16,7 +16,7 @@ const SalesReport = () => {
       <h3>Sales report</h3>
       <ResponsiveContainer width="100%">
         <AreaChart
-          className={styles.AreaChart}
+          /*  className={styles.AreaChart} */
           width={500}
           height={150}
           data={data}
