@@ -2,6 +2,7 @@
 
 .mainChannelsReport {
   width: 100%;
+  height: 300px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -14,6 +15,7 @@
 @media only screen and (min-width: 1024px) {
   .mainChannelsReport {
     width: 30%;
+    height: 100%;
     padding: 10px 0;
   }
 }
