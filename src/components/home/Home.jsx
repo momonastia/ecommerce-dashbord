@@ -11,7 +11,6 @@ const Home = () => {
         <SalesBarReport>{"Total sales"}</SalesBarReport>
         <SalesBarReport>{"Total expenses"}</SalesBarReport>
       </div>
-
       <div className={styles.Charts}>
         <ChannelsReport />
         <SalesReport />

@@ -1,7 +1,14 @@
 @import "src/constants/variables.scss";
 
-.main {
+.mainHeader {
   height: $header-height;
   background-color: #141414;
   border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mainHeader {
+    padding-bottom: 5.5rem;
+  }
 }
