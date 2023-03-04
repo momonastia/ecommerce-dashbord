@@ -1,5 +1,6 @@
 import CategoryForm from "../categoryForm/CategoryForm";
 import styles from "./styles.module.scss";
+
 const Modal = ({ setShowModal, data, getData }) => {
   return (
     <div className={styles.cover}>

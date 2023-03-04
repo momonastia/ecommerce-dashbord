@@ -2,7 +2,7 @@ import DeleteBtn from "../deleteBtn/DeleteBtn";
 import EditBtn from "../editBtn/EditBtn";
 import styles from "./styles.module.scss";
 
-const Table = ({ categoryState, getData }) => {
+const Table = ({ categoryState, getData, loading }) => {
   return (
     <div className={styles.main}>
       <div className={styles.tableHeader}>Categories</div>
@@ -12,7 +12,10 @@ const Table = ({ categoryState, getData }) => {
             <img src={item.image} alt={item.name} />
             <p>{item.name}</p>
             <div className={styles.buttons}>
-              <EditBtn getData={getData} />
+              <EditBtn
+                data={{ name: item.name, image: item.image, id: item.id }}
+                getData={getData}
+              />
               <DeleteBtn getData={getData} id={item.id} />
             </div>
           </div>

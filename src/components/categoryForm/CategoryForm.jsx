@@ -40,7 +40,7 @@ const CategoryForm = ({ setShowModal, getData, data }) => {
   const editForm = (e) => {
     e.preventDefault();
     PUT("categories", form, "/" + data.id).then((data) => {
-      console.log(data);
+      console.log("put data>>>", data);
       if (data.status === 200) {
         setShowModal(false);
         getData();
@@ -54,20 +54,22 @@ const CategoryForm = ({ setShowModal, getData, data }) => {
         type="text"
         value={form.name}
         onChange={(e) => handleForm("name", e)}
+        placeholder="Category name"
       />
       <input
         type="text"
         value={form.image}
         onChange={(e) => handleForm("image", e)}
+        placeholder="Category image URL"
       />
 
       {edit ? (
         <button type="submit" onClick={(e) => editForm(e)}>
-          edit
+          Edit
         </button>
       ) : (
         <button type="submit" onClick={(e) => submitForm(e)}>
-          invia
+          Send
         </button>
       )}
     </form>
