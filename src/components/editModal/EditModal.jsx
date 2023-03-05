@@ -4,12 +4,17 @@ const EditModal = ({ setShowModal, data, getData }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.modal}>
+        <button
+          className={styles.modalCloseBtn}
+          onClick={() => setShowModal(false)}
+        >
+          X
+        </button>
         <CategoryForm
           data={data}
           getData={getData}
           setShowModal={setShowModal}
         />
-        <button onClick={() => setShowModal(false)}>Chiudi</button>
       </div>
     </div>
   );

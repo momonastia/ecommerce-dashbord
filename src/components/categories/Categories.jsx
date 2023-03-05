@@ -36,7 +36,7 @@ const Categories = () => {
         <ImSpinner6 />
       ) : (
         <>
-          <button onClick={() => setShowModal(true)}>Aggiungi</button>
+          <button onClick={() => setShowModal(true)}>Add new category</button>
           <Table getData={getData} categoryState={categoryState.category} />
         </>
       )}
