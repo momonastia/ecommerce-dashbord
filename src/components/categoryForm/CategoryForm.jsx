@@ -49,7 +49,7 @@ const CategoryForm = ({ setShowModal, getData, data }) => {
   };
 
   return (
-    <form>
+    <form className={styles.CategoryForm}>
       <input
         type="text"
         value={form.name}

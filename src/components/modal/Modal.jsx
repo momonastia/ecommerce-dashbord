@@ -5,7 +5,12 @@ const Modal = ({ setShowModal, data, getData }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.modal}>
-        <button onClick={() => setShowModal(false)}>Chiudi</button>
+        <button
+          className={styles.modalCloseBtn}
+          onClick={() => setShowModal(false)}
+        >
+          X
+        </button>
         <CategoryForm
           data={data}
           getData={getData}

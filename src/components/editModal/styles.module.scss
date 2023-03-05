@@ -9,9 +9,21 @@
   top: 0;
   left: 0;
   .modal {
-    width: 400px;
-    height: 500px;
-    background-color: #fff;
+    position: absolute;
+    width: 20rem;
+    height: 10rem;
+    background-color: #1c1d21;
+    color: #6f7173;
     opacity: 0.9;
+    border-radius: 12px;
+
+    .modalCloseBtn {
+      position: relative;
+      right: -8rem;
+    }
+
+    .modalCloseBtn:hover {
+      cursor: pointer;
+    }
   }
 }
