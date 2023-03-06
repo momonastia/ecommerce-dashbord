@@ -23,21 +23,21 @@
     width: 100%;
     height: 300px;
     overflow-y: scroll;
-    padding: 10px;
+    padding: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 1em;
     .tableRow {
       display: flex;
-      flex-flow: row wrap;
+      /* flex-flow: row wrap; */
       align-items: center;
-      justify-content: flex-start;
-      height: 40px;
-      gap: 20px;
-      border: 1px solid #1e1f1f;
-      border-radius: 5px;
+      justify-content: center;
+      height: 3rem;
+      gap: 10px;
+      font-size: 1rem;
+      border-radius: 12px;
       margin: 10px;
-      padding: 5px;
+      padding: 0.5rem;
       img {
         height: 30px;
         width: 30px;
@@ -51,18 +51,32 @@
         margin-left: auto;
       }
       button {
-        background-color: #0ebe75;
-        height: 25px;
         width: 4em;
         margin: 3px;
         padding: 3px;
-        border-radius: 5px;
+        border-radius: 8px;
         border: none;
       }
 
       button:hover {
         cursor: pointer;
       }
+    }
+
+    .tableRow:hover {
+      box-shadow: 0px 0px 0px 2px rgba(14, 190, 117, 0.5),
+        0px 2px 2px rgba(14, 190, 117, 0.1), 0px 4px 8px rgba(14, 190, 117, 0.1),
+        0px 8px 16px rgba(14, 190, 117, 0.1);
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    .tableRow {
+      font-size: 1.5rem;
+      padding: 10px;
+      gap: 20px;
     }
   }
 }

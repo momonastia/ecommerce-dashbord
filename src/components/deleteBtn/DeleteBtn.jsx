@@ -1,5 +1,6 @@
 import { DELETE } from "../../libs/HTTP";
 import styles from "./styles.module.scss";
+import { AiOutlineDelete } from "react-icons/ai";
 
 const DeleteBtn = ({ id, getData }) => {
   const deleteElement = () => {
@@ -10,8 +11,8 @@ const DeleteBtn = ({ id, getData }) => {
   };
 
   return (
-    <button onClick={() => deleteElement()} className={styles.main}>
-      Delete
+    <button onClick={() => deleteElement()} className={styles.mainDeleteBtn}>
+      <AiOutlineDelete />
     </button>
   );
 };
