@@ -12,7 +12,7 @@
     height: calc(100vh - $header-height);
     width: 85%;
     background-color: #1c1d21;
-    overflow: scroll;
+    overflow: hidden;
   }
 
   ::-webkit-scrollbar {

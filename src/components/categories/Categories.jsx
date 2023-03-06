@@ -30,7 +30,7 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className={styles.main}>
+    <div className={styles.mainCategories}>
       {showModal && <Modal getData={getData} setShowModal={setShowModal} />}
       {categoryState.loading ? (
         <ImSpinner6 />
