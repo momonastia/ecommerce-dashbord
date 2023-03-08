@@ -64,11 +64,19 @@ const CategoryForm = ({ setShowModal, getData, data }) => {
       />
 
       {edit ? (
-        <button type="submit" onClick={(e) => editForm(e)}>
+        <button
+          type="submit"
+          className={styles.EditBtn}
+          onClick={(e) => editForm(e)}
+        >
           Edit
         </button>
       ) : (
-        <button type="submit" onClick={(e) => submitForm(e)}>
+        <button
+          type="submit"
+          className={styles.SendBtn}
+          onClick={(e) => submitForm(e)}
+        >
           Send
         </button>
       )}

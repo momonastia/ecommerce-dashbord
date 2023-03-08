@@ -19,14 +19,23 @@
 
     .modalCloseBtn {
       position: relative;
-      right: -8rem;
+      right: -8.5rem;
+      color: #0ebe75;
+      background-color: transparent;
+      height: 1.7rem;
+
+      transform: rotate(45deg);
+      font-size: 1.4rem;
+      opacity: 0.5;
     }
 
     .modalCloseBtn:hover {
       cursor: pointer;
+      opacity: 1;
     }
     button {
-      background-color: #0ebe75;
+      color: #0ebe75;
+      background-color: transparent;
       height: 25px;
       width: 3em;
       margin: 3px;

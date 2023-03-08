@@ -9,7 +9,7 @@ const Modal = ({ setShowModal, data, getData }) => {
           className={styles.modalCloseBtn}
           onClick={() => setShowModal(false)}
         >
-          X
+          +
         </button>
         <CategoryForm
           data={data}
