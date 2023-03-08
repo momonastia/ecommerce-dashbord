@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EditProductModal from "../editProductModal/EditProductModal";
 import styles from "./styles.module.scss";
+import { AiOutlineEdit } from "react-icons/ai";
 
 const EditProductBtn = ({ data, getData }) => {
   const [showModal, setShowModal] = useState(false);
@@ -13,8 +14,8 @@ const EditProductBtn = ({ data, getData }) => {
           setShowModal={setShowModal}
         />
       )}
-      <button onClick={() => setShowModal(true)} className={styles.main}>
-        Edit
+      <button onClick={() => setShowModal(true)} className={styles.mainEditBtn}>
+        <AiOutlineEdit />
       </button>
     </>
   );
