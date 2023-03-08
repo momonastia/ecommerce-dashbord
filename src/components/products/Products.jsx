@@ -36,18 +36,16 @@ const Products = () => {
         <Fragment>
           <div className={styles.tableHeader}>Products</div>
           <div className={styles.tableBody}>
-            {productState.product.map((item, id) => (
-              /* console.log(item.title); */
+            {productState.product.map((item) => (
               <>
                 <div className={styles.productListItem} key={item.id}>
-                  <div className={styles.productListItemImage}>
-                    <img src={item.images[0]} alt="" />
-                  </div>
+                  <img src={item.images[0]} alt="" />
                   <div>{item.title}</div>
                   <div>Price: {item.price} $</div>
-                  <div className={styles.buttons}></div>
-                  <EditProductBtn getData={getData} />
-                  <DeleteProductBtn getData={getData} id={item.id} />
+                  <div className={styles.buttons}>
+                    <EditProductBtn getData={getData} />
+                    <DeleteProductBtn getData={getData} id={item.id} />
+                  </div>
                 </div>
               </>
             ))}

@@ -1,0 +1,20 @@
+.mainEditBtn {
+  background-color: transparent;
+  color: #0ebe75;
+  height: 1.7rem;
+  padding: 0.3rem;
+}
+
+.mainEditBtn:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 0px 2px rgba(14, 190, 117, 0.5),
+    0px 2px 2px rgba(14, 190, 117, 0.1), 0px 4px 8px rgba(14, 190, 117, 0.1),
+    0px 8px 16px rgba(14, 190, 117, 0.1);
+}
+
+@media only screen and (min-width: 1024px) {
+  .mainEditBtn {
+    height: 2rem;
+  }
+}
