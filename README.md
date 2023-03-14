@@ -7,7 +7,7 @@
 
 <div>
   <h3 align="left">Description</h3>
-    <p  align="left"> E-commerce dashboard </p>
+    <p  align="left"> E-commerce dashboard that consists of home page, products page and categories page. On the product page user would be able to edit o delete products. Categories page permits to add new category, edit o delete existing categories. </p>
     <p  align="left"> API: https://api.escuelajs.co/docs/ </p>
    <br>
     
